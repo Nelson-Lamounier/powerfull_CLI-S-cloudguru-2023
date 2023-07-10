@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9efd81d3617771eaf61d306a390cd9892f52a2cf06309d384d8f4cbed1133732"
+            "sha256": "d916cbe260385c534d1c9c96c4a69395a713b547de9405df452916c9b9380714"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,7 +16,40 @@
             }
         ]
     },
-    "default": {},
+    "default": {
+        "click": {
+            "hashes": [
+                "sha256:2739815aaa5d2c986a88f1e9230c55e17f0caad3d958a5e13ad0797c166db9e3",
+                "sha256:b97d0c74955da062a7d4ef92fadb583806a585b2ea81958a81bd72726cbb8e37"
+            ],
+            "index": "pypi",
+            "version": "==8.1.4"
+        },
+        "importlib-metadata": {
+            "hashes": [
+                "sha256:1aaf550d4f73e5d6783e7acb77aec43d49da8017410afae93822cc9cca98c4d4",
+                "sha256:cb52082e659e97afc5dac71e79de97d8681de3aa07ff18578330904a9d18e5b5"
+            ],
+            "markers": "python_version < '3.8'",
+            "version": "==6.7.0"
+        },
+        "typing-extensions": {
+            "hashes": [
+                "sha256:440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36",
+                "sha256:b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2"
+            ],
+            "markers": "python_version < '3.8'",
+            "version": "==4.7.1"
+        },
+        "zipp": {
+            "hashes": [
+                "sha256:112929ad649da941c23de50f356a2b5570c954b65150642bccdd66bf194d224b",
+                "sha256:48904fc76a60e542af151aded95726c1a5c34ed43ab4134b597665c86d7ad556"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==3.15.0"
+        }
+    },
     "develop": {
         "bleach": {
             "hashes": [
@@ -230,7 +263,7 @@
                 "sha256:1aaf550d4f73e5d6783e7acb77aec43d49da8017410afae93822cc9cca98c4d4",
                 "sha256:cb52082e659e97afc5dac71e79de97d8681de3aa07ff18578330904a9d18e5b5"
             ],
-            "markers": "python_version >= '3.7'",
+            "markers": "python_version < '3.8'",
             "version": "==6.7.0"
         },
         "importlib-resources": {
@@ -365,7 +398,7 @@
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
                 "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==1.16.0"
         },
         "twine": {
