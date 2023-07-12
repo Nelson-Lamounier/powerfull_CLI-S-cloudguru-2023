@@ -46,14 +46,13 @@ async def distribute_work(url, requests, concurrency, results):
     for task in tasks:
         task.cancel()
 
-    print("---")
-    print(
-            f"{concurrency} workers took {total_time:.2f} seconds to complete {len(results)} requests")
+    return total_time
 
+# Entrypoint to making requests
 def assault(url, requests, concurrency):
     """ Entrypoint to make requests """
     results = []
-    asyncio.run(distribute_work(url, requests, concurrency, results))
-    print(results)
+    total_time = asyncio.run(distribute_work(url, requests, concurrency, results))
+    return (total_time, results)
 
 
